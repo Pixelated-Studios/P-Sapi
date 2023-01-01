@@ -6,5 +6,5 @@ Gem::Specification.new do |spec|
 
   spec.summary = 'A Programming Interface for Pixelated Studios that provides simple ways to do semi-complex to complex things things in Ruby'
   spec.homepage = "https://github.com/Pixelated-Studios/P-Sapi"
-  spec.license =
+  spec.license = 'GPL-3.0'
 end
