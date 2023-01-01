@@ -4,26 +4,28 @@
 class Directories
 
   def initialize
-    $exists = nil
-    $error = nil
-    $created = nil
-    $path = nil
+    @@exists = nil
+    @@error = nil
+    @@created = nil
+    @@path = nil
   end
 
   def check(path)
-    $path = path
-    $exists = Dir.exist?(path)
-    case $exists
+    @@path = path
+    @@exists = Dir.exist?(@@path)
+    case @@exists
     when 0
-      $exists = true
+      @@exists = true
     when 1
-      $exists = false
+      @@exists = false
     else
-      $error = "Ran into issue checking if #{path} exists!"
+      @@error = "Ran into issue checking if #{@@path} exists!"
+      puts @@error
     end
   end
 
   def makedir(path)
-    Dir.mkdir("#{path}")
+    @@path = path
+    Dir.mkdir("#{@@path}")
   end
 end
