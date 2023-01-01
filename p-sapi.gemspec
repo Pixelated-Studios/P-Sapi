@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.license = 'GPL-3.0'
   spec.required_ruby_version = Gem::Requirement.new('3.0.0')
 
-  spec.metadata["allowed_push_host"] = "https://github.com/Pixelated-Studios/P-Sapi"
+  spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
