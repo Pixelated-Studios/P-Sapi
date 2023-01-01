@@ -21,4 +21,3 @@ Gem::Specification.new do |spec|
   end
   spec.require_paths = ["lib"]
 end
-end
