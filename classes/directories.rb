@@ -28,4 +28,17 @@ class Directories
     @@path = path
     Dir.mkdir("#{@@path}")
   end
-end
+
+  def removedir(path)
+    loop do
+    @@path = path
+    Dir.delete(@@path)
+    result = Dir.exist?(@@path)
+    case result
+    when true
+    when false
+      break
+    end
+    end
+    end
+  end
