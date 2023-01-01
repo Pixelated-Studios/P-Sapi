@@ -38,6 +38,8 @@ class Directories
     when true
     when false
       break
+    else
+      @@error = "Ran into issue removing #{@@path}"
     end
     end
     end
